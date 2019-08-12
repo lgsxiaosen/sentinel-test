@@ -17,8 +17,8 @@ public class SentinelController {
     private SentinelService sentinelService;
 
     @GetMapping("/sent")
-    public String get(){
-        return sentinelService.getException("hello world");
+    public String get() throws Exception{
+        return sentinelService.get("hello world");
     }
 
 }
